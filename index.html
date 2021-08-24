@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Text Adventure Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="gamearea">
+            <div id="title">
+                <div class="col">
+                    <h1 class="text-center hide-me">Welcome to Text Adventure Game</h1>
+                    <br />
+                </div>
+            </div>
+            <div id="details">
+                <h1 class="hide-me">Lets Start!</h1>
+                <div class="justify-content-center mx-auto">
+                    <p id="textarea" class="text-center">
+
+                    </p>
+                    <div id="buttonarea">
+                        <input id="startbutton" type="button" value="Start Game" class="btn btn-success text-center"
+                            onclick="startGame()">
+                    </div>
+                </div>
+            </div>
+            <form id="gameform">
+                <div id="userentry"></div>
+            </form>
+            <div id="form-guess">
+                <label for="guessField">Find the number : </label>
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" value="Submit guess" class="guessSubmit" id="submitguess">
+            </div>
+            <br>
+            <hr>
+
+
+        </div>
+        <hr>
+    </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
